@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+
+
+    <div class="container">
+        <h2>MarkSheet</h2>
+        
+        <form method="post">
+            {% csrf_token %}
+            <label for="Shubject 1">Shubject 1:</label><br>
+            <input type="text" id="Shubject 1" name="Shubject 1"><br><br>
+            <label for="Shubject 2">Shubject 2:</label><br>
+            <input type="text" id="Shubject 2" name="Shubject 2"><br><br>
+            <label for="Shubject 3">Shubject 3:</label><br>
+            <input type="text" id="Shubject 3" name="Shubject 3"><br><br>
+            <input type="submit" value="Submit"><br><br>
+            <label for="Shubject 3">Total Marks:</label><br>
+            <input type="text" id="total" name="total" value="{{total}}"><br><br>
+            <label for="Shubject 3">Division:</label><br>
+            <input type="text" id="division" name="division" value="{{p}}"><br><br>
+            
+        </form>
+    </div>
+    
+    </body>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

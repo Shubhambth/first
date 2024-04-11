@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    
+
+<div class="container">
+    
+    <h2>{{serviceData.post_title | safe }}</h2>
+    <embed
+        src="/media/{{serviceData.post_image}}"
+        type="application/pdf"
+        frameBorder="0"
+        scrolling="auto"
+        height="100%"
+        width="100%">
+        </embed>
+   
+    <p>{{serviceData.post_description | safe }}</p>
+
+    <div class="ceneter">
+     
+        
+    
+    </div>  
+    
+    
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}

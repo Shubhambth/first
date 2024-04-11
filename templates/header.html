@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Ji Ki Duniya</title>
+<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<header>
+        <h1>Shubham Ji Ki Duniya</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'marksheet' %}">Marksheet</a></li>
+                
+                
+            </ul>
+            <br>
+            <ul>
+                <li><form method="get"><input type="text" name="newsname" value=""/><input type="submit" value="Search"/></form></li>
+            </ul>
+        </nav>
+</header>
+    

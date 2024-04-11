@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    
+{% for n in serviceData %}    
+<div class="container">
+    
+    <h2>{{n.post_title}}</h2>
+    <p>{{n.post_description | slice:"0:60" | safe}}</p>
+    <a href="/detailview/{{n.news_slug}}">Show Details</a>
+    
+</div>
+{% empty %}
+NO DETA FOUND
+{% endfor %}
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! If you have any questions, inquiries, or feedback, please don't hesitate to get in touch with us.</p>
+        <h3>Contact Information:</h3>
+        <p><strong>Email:</strong> info@animalwelfare.org</p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Main Street, Cityville, State, Zip</p>
+        <h3>Send us a message:</h3>
+        <form action="{% url 'contact' %}" method="post">
+            {% csrf_token %}
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
